@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8" />
-    <title></title>
-  </head>
-  <body>
-    <p>
-     <?php
-     if(isset($_GET['firstname']) && isset($_GET['lastname'])){ // On a le nom et le prénom
-         echo $_GET['firstname'] . ' ' . $_GET['lastname'];
-     }
-     ?>
-  </body>
-</html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>P8ex1</title>
+    </head>
+    <body>
+        <p><?= $_SERVER['HTTP_USER_AGENT'];?></p>
+        <p><?= $_SERVER['REMOTE_ADDR'];?></p>
+        <p><?= $_SERVER['SERVER_NAME'];?></p>
+    </body>
+    </html>
